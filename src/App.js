@@ -6,8 +6,8 @@ import './App.css'
 
 export default function App() {
   return (
-    <div>    
-        <IndexRouter />  
-    </div>
+        
+    <IndexRouter />  
+    
   )
 }
