@@ -1,0 +1,12 @@
+{
+  "posts": [
+    { "id": 1, "title": "news1111111", "author": "Tom" },
+    { "id": 2, "title": "news222222", "author": "Jack" },
+    { "id": 3, "title": "news333333", "author": "Bob" },
+    { "id": 4, "title": "news44444", "author": "Sha" }
+  ],
+  "comments": [
+    { "id": 1, "body": "comment1111", "postId": 1 },
+    { "id": 2, "body": "comment22222", "postId": 2}
+  ]
+}
