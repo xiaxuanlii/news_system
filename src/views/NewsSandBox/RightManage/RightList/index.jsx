@@ -56,10 +56,8 @@ export default function RightList() {
             item.children = ''
           }
         })
-
         setRightList(res.data)
-      }
-    )
+      })
   }, [])
   const columns = [
     {
@@ -91,24 +89,17 @@ export default function RightList() {
             <Button danger shape="circle" icon={<DeleteOutlined />}
               onClick={() => showConfirm(item)}></Button>
             <Popover content={<div style={{textAlign:"center"}}>
-            <Switch checked={item.pagepermisson} onChange={()=>switchMethod(item)}></Switch></div>} title="页面配置项" trigger={item.pagepermisson===undefined?'':"click"}>
+              <Switch checked={item.pagepermisson} onChange={()=>switchMethod(item)}></Switch></div>} title="页面配置项" trigger={item.pagepermisson===undefined?'':"click"}>
               <Button type="primary" shape="circle" disabled={item.pagepermisson===undefined} icon={<EditOutlined />}></Button>
-            </Popover>
-            
+            </Popover>         
           </div>
         )
-
-
       }
     }
   ]
-
   return (
     <div>
-      <Table columns={columns} dataSource={rightList}
-        pagination={{
-          pageSize: 5
-        }} />
+      <Table columns={columns} dataSource={rightList} pagination={{pageSize: 5}} />
     </div>
   )
 }

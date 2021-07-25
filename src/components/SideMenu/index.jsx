@@ -21,7 +21,6 @@ function SideMenu(props) {
   useEffect(() => {
     axios.get('http://localhost:8000/rights?_embed=children').then(
       (res) => {
-        console.log(res.data);
         setMenu(res.data)
       }
     )
@@ -41,7 +40,6 @@ function SideMenu(props) {
       //渲染一级菜单
       return checkPagePermission(item) && <Menu.Item key={key} icon={iconList[item.key]} onClick={() => {
         props.history.push(key)
-        // console.log(props);
       }}>{title}</Menu.Item>
     })
   }
