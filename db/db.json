@@ -11,20 +11,20 @@
     },
     {
       "username": "铁锤",
-      "password": "123",
+      "password": "dddd",
       "roleState": true,
       "default": false,
-      "region": "亚洲",
+      "region": "非洲",
       "roleId": 2,
       "id": 2
     },
     {
       "username": "钢蛋",
-      "password": "123",
+      "password": "ooo",
       "roleState": true,
       "default": false,
-      "region": "南极洲",
-      "roleId": 2,
+      "region": "南美洲",
+      "roleId": 3,
       "id": 3
     },
     {
@@ -37,12 +37,12 @@
       "id": 4
     },
     {
-      "username": "西门吹灯",
-      "password": "123",
+      "username": "西门吹雪",
+      "password": "xxxxxxx",
       "roleState": true,
       "default": false,
       "region": "南极洲",
-      "roleId": 3,
+      "roleId": 2,
       "id": 5
     },
     {
